@@ -1,49 +1,75 @@
-# Sboboz App (Flutter)
+# Sboboz Game
 
-Flutter + Riverpod. Connects to Sboboz backend via REST and Socket.io.
+A Flutter mobile game application.
 
-## Prerequisites
+## Getting Started
 
-- Flutter SDK (stable, 3.2+)
-- Backend running on `http://localhost:3000` (or set in `lib/core/config/app_config.dart`)
+This project is a starting point for a Flutter application.
 
-## First-time setup
+### Prerequisites
 
-If the project was scaffolded without Flutter CLI, generate platform folders:
+- Flutter SDK
+- Dart
+- Android Studio or Xcode (for emulator/device testing)
 
-```bash
-cd app
-flutter create .
-```
-
-Then:
+### Installation
 
 ```bash
+# Clone the repository
+git clone <repository-url>
+
+# Navigate to project directory
+cd Sboboz
+
+# Get dependencies
 flutter pub get
-```
 
-## Run
-
-```bash
-cd app
+# Run the app
 flutter run
 ```
 
-- **Chrome:** `flutter run -d chrome`
-- **Android:** Use `http://10.0.2.2:3000` for API/WS when using Android emulator (change in `app_config.dart`)
-
-## Structure
+## Project Structure
 
 ```
-lib/
-  core/           # config, network (socket, API), theme
-  features/       # home, lobby, game (Phase 1+)
-  shared/         # widgets, models (later)
-  app.dart
-  main.dart
+app/
+├── lib/
+│   ├── main.dart
+│   ├── screens/
+│   ├── widgets/
+│   └── models/
+├── test/
+├── pubspec.yaml
+└── README.md
 ```
 
-## State management
+## Features
 
-- **Riverpod** for global state (socket, auth, game state).
-- Feature-specific providers in `features/<name>/providers/`.
+- [Add your features here]
+
+## Dependencies
+
+See `pubspec.yaml` for all dependencies.
+
+## Testing
+
+```bash
+flutter test
+```
+
+## Building
+
+```bash
+# Build APK (Android)
+flutter build apk
+
+# Build iOS
+flutter build ios
+```
+
+## Contributing
+
+Pull requests are welcome.
+
+## License
+
+[Add your license here]
